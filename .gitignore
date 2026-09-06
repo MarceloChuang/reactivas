@@ -29,3 +29,10 @@ __MACOSX/
 
 # Archives
 *.zip
+
+# Labs not yet added to the repo -- delete a line here to start tracking that lab
+Lab2_template/
+Template_Lab_03/
+c03_Web_Essentials/
+lab2/
+laboratorio-1/
