@@ -1,5 +1,5 @@
 import { Box, CircularProgress, Paper, Typography } from '@mui/material'
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import type { Post } from '../types/posts'
 import threads from '../services/threads'
 import { useParams } from 'react-router-dom'
@@ -57,7 +57,9 @@ function Thread({ setToast }: ThreadProps) {
         />
       </Box>
       {comments.map(comment => (
-        <>
+        // key faltaba en el template: sin ella React reutiliza mal los nodos
+        // al agregar un comentario nuevo con el POST de P3.
+        <Fragment key={comment.id}>
           <Paper elevation={4} sx={{ ml: comment.thread === null ? 0 : { xs: 2, sm: 4 } }}>
             <PostBox
               post={comment}
@@ -75,8 +77,7 @@ function Thread({ setToast }: ThreadProps) {
               />
             </Box>
           )}
-        </>
-
+        </Fragment>
       ))}
     </Box>
   )

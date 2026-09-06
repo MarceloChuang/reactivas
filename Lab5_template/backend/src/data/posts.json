@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "content": "Bienvenidos a Pila Completa! Este es el primer thread del foro.",
+    "author": "admin",
+    "thread": null,
+    "parent": null,
+    "createdAt": "2025-09-01T12:00:00.000Z",
+    "updatedAt": "2025-09-01T12:00:00.000Z",
+    "likes": 12,
+    "dislikes": 1
+  },
+  {
+    "id": 2,
+    "content": "Alguien entendio como funcionan los middlewares de Express?",
+    "author": null,
+    "thread": null,
+    "parent": null,
+    "createdAt": "2025-09-02T09:30:00.000Z",
+    "updatedAt": "2025-09-02T09:30:00.000Z",
+    "likes": 5,
+    "dislikes": 0
+  },
+  {
+    "id": 3,
+    "content": "Buenisimo el foro, se ve muy limpio.",
+    "author": "pedrito",
+    "thread": 1,
+    "parent": null,
+    "createdAt": "2025-09-01T13:15:00.000Z",
+    "updatedAt": "2025-09-01T13:15:00.000Z",
+    "likes": 3,
+    "dislikes": 0
+  },
+  {
+    "id": 4,
+    "content": "Concuerdo, quedo muy bien logrado.",
+    "author": null,
+    "thread": 1,
+    "parent": 3,
+    "createdAt": "2025-09-01T14:00:00.000Z",
+    "updatedAt": "2025-09-01T14:00:00.000Z",
+    "likes": 1,
+    "dislikes": 0
+  },
+  {
+    "id": 5,
+    "content": "Son funciones que reciben (req, res, next) y se ejecutan en orden. El de errores recibe 4 argumentos.",
+    "author": "ayudante",
+    "thread": 2,
+    "parent": null,
+    "createdAt": "2025-09-02T10:05:00.000Z",
+    "updatedAt": "2025-09-02T10:05:00.000Z",
+    "likes": 8,
+    "dislikes": 0
+  }
+]

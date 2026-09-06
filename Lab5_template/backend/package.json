@@ -1,0 +1,29 @@
+{
+  "name": "lab5-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend del Laboratorio 5 - CC5003 Aplicaciones Web Reactivas",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "build:ui": "node scripts/build-ui.mjs",
+    "seed": "tsx src/utils/seed.ts",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.6",
+    "typescript": "~5.8.3"
+  }
+}

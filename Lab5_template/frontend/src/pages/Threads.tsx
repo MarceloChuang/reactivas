@@ -39,7 +39,9 @@ function Threads({ setToast }: ThreadsProps) {
         />
       </Box>
       {reversed.map(thread => (
-        <Paper elevation={4}>
+        // key faltaba en el template: sin ella React reutiliza mal los
+        // nodos al agregar un thread nuevo con el POST de P2.
+        <Paper key={thread.id} elevation={4}>
           <PostBox post={thread} action="forward" setToast={setToast} />
         </Paper>
       ))}
