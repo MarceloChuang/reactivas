@@ -1,0 +1,29 @@
+GET http://localhost:3001/api/threads
+
+###
+
+POST http://localhost:3001/api/threads
+Content-Type: application/json
+
+{
+  "content": "Mi primer thread",
+  "author": "lucas"
+}
+
+###
+
+GET http://localhost:3001/api/thread/1
+
+###
+
+POST http://localhost:3001/api/thread/1
+Content-Type: application/json
+
+{
+  "content": "Un comentario",
+  "author": "lucas"
+}
+
+###
+
+GET http://localhost:3001/api/thread/999
